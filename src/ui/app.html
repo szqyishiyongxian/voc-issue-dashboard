@@ -1,0 +1,83 @@
+<div class="app">
+  <div class="top">
+    <div class="brand"><span class="dot"></span><span data-i18n="app.brand"></span></div>
+    <div class="tabs" id="tabs">
+      <button class="tab on" data-team="FAE" data-i18n="team.FAE"></button>
+      <button class="tab" data-team="TRAIN" data-i18n="team.TRAIN"></button>
+      <button class="tab" data-team="VAS" data-i18n="team.VAS"></button>
+    </div>
+    <div class="spacer"></div>
+    <label class="search">
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.7"/><path d="M11 11l3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <input id="q" data-i18n-ph="search.placeholder" />
+    </label>
+    <button class="icon-btn" id="themeBtn" data-i18n-title="btn.theme">◐</button>
+    <button class="icon-btn" id="reloadBtn" data-i18n-title="btn.reload">⟳</button>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="main" id="main">
+    <div class="card left">
+      <div class="card-h">
+        <span class="t" id="chartTitle"></span>
+        <span class="n" id="chartSub"></span>
+        <div class="spacer"></div>
+        <div class="seg" id="modeSeg">
+          <button data-mode="product" class="on" data-i18n="seg.byProduct"></button>
+          <button data-mode="matrix" data-i18n="seg.matrix"></button>
+        </div>
+      </div>
+      <div class="card-b" id="leftBody"></div>
+    </div>
+
+    <div class="card right">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="card-h">
+        <span class="t" id="rightTitle"></span>
+        <span class="n" id="rightSub"></span>
+        <div class="spacer"></div>
+        <div class="seg" id="lvlSeg">
+          <button data-lv="1" class="on" data-i18n="seg.lv1"></button>
+          <button data-lv="2" data-i18n="seg.lv2"></button>
+          <button data-lv="3" data-i18n="seg.lv3"></button>
+        </div>
+      </div>
+      <div class="card-b" id="rankBody" style="flex:0 1 auto;max-height:34%;min-height:90px"></div>
+      <div class="card-h" style="border-top:1px solid var(--line)">
+        <div class="seg" id="botSeg">
+          <button data-pan="detail" class="on" data-i18n="panel.detail"></button>
+          <button data-pan="kb" data-i18n="panel.kb"></button>
+        </div>
+        <span class="n" id="dtSub"></span>
+        <div class="spacer"></div>
+        <span style="font-size:11px;color:var(--ink3)" id="kbHint"></span>
+      </div>
+      <div class="card-b nopad" id="dtBody" style="flex:1 1 auto"></div>
+      <div class="card-b" id="kbPanel" style="flex:1 1 auto;display:none">
+        <div class="kb-list" id="kbList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mask" id="mask">
+  <div class="modal">
+    <div class="modal-h">
+      <div style="flex:1;min-width:0">
+        <div class="tt" id="mTitle"></div>
+        <div class="sub" id="mSub"></div>
+      </div>
+      <button class="icon-btn" id="mClose">✕</button>
+    </div>
+    <div class="modal-b">
+      <dl class="kv" id="mKv"></dl>
+      <div class="convo-h" id="mConvoH"></div>
+      <div class="convo" id="mConvo"></div>
+    </div>
+    <div class="modal-f">
+      <a class="btn" id="mKb" target="_blank" rel="noopener" style="display:none" data-i18n="modal.openKb"></a>
+      <button class="btn p" id="mOk" data-i18n="modal.close"></button>
+    </div>
+  </div>
+</div>

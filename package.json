@@ -1,0 +1,19 @@
+{
+  "name": "voc-issue-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Feishu Bitable app plugin: VOC issue analytics dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "output": "dist",
+  "dependencies": {
+    "@lark-base-open/js-sdk": "^1.0.2"
+  },
+  "devDependencies": {
+    "vite": "^4.5.3"
+  }
+}

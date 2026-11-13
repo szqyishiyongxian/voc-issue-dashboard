@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.test/
+.frames/
+*.log
+.DS_Store
